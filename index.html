@@ -434,51 +434,72 @@
 
 <!-- Total Impairment Calculator -->
 <div class="card" id="totalImpairmentCalculator">
-    <h3>Total Impairment</h3>
-    <table class="total-impairment-table">
-        <tr>
-            <td class="impairment-label">Total HD Impairment:</td>
-            <td id="total-hd-impairment" class="impairment-value">0</td>
-        </tr>
-        <tr>
-            <td class="impairment-label">Total UE Impairment:</td>
-            <td id="total-ue-impairment" class="impairment-value">0</td>
-        </tr>
-        <tr>
-            <td class="impairment-label">Total WPI:</td>
-            <td id="total-wpi" class="impairment-value">0</td>
-        </tr>
-    </table>
-    <style>
-    .total-impairment-table {
-        width: 100%;
-        font-size: 16px; /* Matching the card header font size */
-        font-weight: bold;
-    }
-    .total-impairment-table td {
-        padding: 10px 0;
-    }
-    .impairment-label {
-        text-align: left;
-        padding-left: 20px; /* Increased left padding */
-    }
-    .impairment-value {
-        text-align: right;
-        padding-right: 30px; /* Increased right padding */
-    }
-    #totalImpairmentCalculator h3 {
-        font-size: 16px; /* Ensure this matches the size you want */
-    }
-    </style>
-    <div style="margin-top: 40px; text-align: left; font-size: 12px;">
-        <h3 style="margin-top: 40px;">AMA Guides 5th Ed. References</h3>
-        <ul style="padding-left: 20px;">
+    <h3 class="impairment-header">Total Impairment</h3>
+    <div class="impairment-content">
+        <div class="impairment-row">
+            <span class="impairment-label">Total HD Impairment:</span>
+            <span id="total-hd-impairment" class="impairment-value">0</span>
+        </div>
+        <div class="impairment-row">
+            <span class="impairment-label">Total UE Impairment:</span>
+            <span id="total-ue-impairment" class="impairment-value">0</span>
+        </div>
+        <div class="impairment-row">
+            <span class="impairment-label">Total WPI:</span>
+            <span id="total-wpi" class="impairment-value">0</span>
+        </div>
+    </div>
+    <div class="references-section">
+        <h4>AMA Guides 5th Ed. References</h4>
+        <ul>
             <li>Thumb impairment based on Figures 16-12 & 16-15 and Tables 16-8a, 16-8b & 16-9 on pages 456 – 460.</li>
             <li>Finger impairment based on Figures 16-21, 16-23 & 16-25 on pages 461 – 464.</li>
             <li>Conversions based on Tables 16-1, 16-2 & 16-3 on pages 438 & 439.</li>
             <li>Instructions on when to add, combine, convert, or interpolate, can be found on pages 460 – 465.</li>
         </ul>
     </div>
+    <style>
+    #totalImpairmentCalculator {
+        font-family: Arial, sans-serif;
+    }
+    .impairment-header {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    .impairment-content {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .impairment-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    .impairment-row:last-child {
+        border-bottom: none;
+    }
+    .impairment-label {
+        flex-grow: 1;
+    }
+    .impairment-value {
+        min-width: 50px;
+        text-align: right;
+    }
+    .references-section {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    .references-section h4 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .references-section ul {
+        padding-left: 20px;
+        margin: 0;
+    }
+    </style>
 </div>
         
     <div class="full-width">
