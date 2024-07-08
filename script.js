@@ -1215,10 +1215,6 @@ function combinefingerImpairments(impairments) {
             document.getElementById('total-hd-impairment').textContent = totalHDImpairment;
             document.getElementById('total-ue-impairment').textContent = totalUEImpairment;
             document.getElementById('total-wpi').textContent = totalWPI;
-
-            document.getElementById('total-hd-impairment').style.fontWeight = 'bold';
-            document.getElementById('total-ue-impairment').style.fontWeight = 'bold';
-            document.getElementById('total-wpi').style.fontWeight = 'bold';
             
             console.log('Final Impairment Results:', { totalHDImpairment, totalUEImpairment, totalWPI });
         } catch (error) {
