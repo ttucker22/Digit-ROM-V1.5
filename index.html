@@ -435,24 +435,32 @@
 <!-- Total Impairment Calculator -->
 <div class="card" id="totalImpairmentCalculator">
     <h3>Total Impairment</h3>
-    <table>
+    <table class="total-impairment-table">
         <tr>
-            <td style="text-align: left;">Total HD Impairment:</td>
+            <td>Total HD Impairment:</td>
             <td id="total-hd-impairment" class="impairment-value">0</td>
         </tr>
         <tr>
-            <td style="text-align: left;">Total UE Impairment:</td>
+            <td>Total UE Impairment:</td>
             <td id="total-ue-impairment" class="impairment-value">0</td>
         </tr>
         <tr>
-            <td style="text-align: left;">Total WPI:</td>
+            <td>Total WPI:</td>
             <td id="total-wpi" class="impairment-value">0</td>
         </tr>
     </table>
     <style>
-    .impairment-value {
+    .total-impairment-table {
+        width: 100%;
+        font-size: 16px;
         font-weight: bold;
-        }
+    }
+    .total-impairment-table td {
+        padding: 5px 0;
+    }
+    .impairment-value {
+        text-align: right;
+    }
     </style>
     <div style="margin-top: 40px; text-align: left; font-size: 12px;">
         <h3 style="margin-top: 40px;">AMA Guides 5th Ed. References</h3>
